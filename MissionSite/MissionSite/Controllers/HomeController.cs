@@ -26,5 +26,13 @@ namespace MissionSite.Controllers
 
             return View();
         }
+        public ActionResult Mission()
+        {
+            return View();
+        }
+        public ActionResult MissionFAQ()
+        {
+            return View();
+        }
     }
 }
