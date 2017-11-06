@@ -3,5 +3,40 @@
     ViewBag.Title = "Mission";
 }
 
-<h2>Mission</h2>
+@section scripts{
 
+    @Scripts.Render("~/bundles/mission")
+
+}
+
+<div class="jumbotron missionJumbo" id="missionBackground">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1 id="selectMission" style="color: whitesmoke; font-family: 'Castellar'; margin:0"><span style="font-size: 70px">SELECT</span><span style="font-size: 100px">A</span></h1>
+                <h1 id="selectMission" style="color: whitesmoke; font-family: 'Castellar'; margin:0; font-size: 85px">MISSION</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="dropdown btn-group">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMission" data-toggle="dropdown">
+                        --SELECT MISSION--
+                        <span class="caret" style="border-top: 4px solid white"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li id="Adriatic">
+                            <a href="#">Adriatic</a>
+                        </li>
+                        <li id="Japan">
+                            <a href="#">Japan</a>
+                        </li>
+                        <li id="Mexico">
+                            <a href="#">Mexico</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

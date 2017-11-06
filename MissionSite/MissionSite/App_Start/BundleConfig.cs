@@ -27,6 +27,9 @@ namespace MissionSite
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/customStyle.css"));
+            bundles.Add(new ScriptBundle("~/bundles/mission").Include(
+                   "~/Scripts/jquery-1.10.2.min.js",
+                   "~/Scripts/Mission.js"));
         }
     }
 }
