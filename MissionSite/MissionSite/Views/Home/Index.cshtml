@@ -2,40 +2,97 @@
     ViewBag.Title = "Blow Out!";
 }
 
-<!--Jumbotron header - should cover most of the visible web page-->
-<div class="jumbotron">
-    <div class="container">
-        <blockquote>
-            It's easy to play any musical instrument: all you have to do is touch the right key at the right time and the instrument will play itself.
-            <footer class="jumbotron_footer"><i>- Johann Sebastian Bach</i></footer>
-        </blockquote>
-        <!--Button goes to Rentals View-->
-        <p>@Html.ActionLink("Let's Get Started", "Rentals", "Home", null, new { @class = "btn btn-primary btn-lg" })
-    </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                BlowOut Instrument Rentals is all about letting YOU experience the world of music! Feel free to browse our
-                selection of both new and used instruments for rental:
-            </p>
-            <!--Goes to Rentals View-->
-            <p>@Html.ActionLink("Start Browsing >>", "Rentals", "Home", null, new { @class = "btn btn-default" })
-        </div>
-        <div class="col-md-4">
-            <h2>Learn More</h2>
-            <p>Curious about who we are and what we do? We've got the answers for you right here:</p><br />
-            <!--Goes to About View-->
-            <p>@Html.ActionLink("Start Learning >>", "About", "Home", null, new { @class = "btn btn-default" })
-        </div>
-        <div class="col-md-4">
-            <h2>Contact Us</h2>
-            <p>We would be happy to answer any questions you might have:</p><br />
-            <!--Goes to Contact View-->
-            <p>@Html.ActionLink("Send a Message >>", "Contact", "Home", null, new { @class = "btn btn-default" })
+<!--Jumbotron header - should cover most of the visible web page-->
+                                   <!--stuff for the video poster-->
+<div id="fullScreenDiv">
+    <!--<img src="https://alexjamesbarrett.files.wordpress.com/2014/07/fijian-missionaries.jpg?w=620" id="videosubstitute" alt="Full screen background video">-->
+
+    <div id="videos" style=" filter: grayscale(30%)">
+        <video  id="video" autoplay="autoplay" controls muted loop="loop">
+            <source src="http://ldsudso-a.akamaihd.net/66852713001/66852713001_2165620956001_2013-02-2000-mormon-missionaries-8000k-eng.mp4?playerId=710849472001&lineupId=&affiliateId=&pubId=710874264001&videoId=2647608631001" type="video/mp4">
+        </video>   
+    </div>
+    <div id="messageBox">
+        <div class="col-lg-1"></div>
+        <div class="row" id="myrow">
+            <div class="col-lg-8">
+                <div id="msg" align="left">
+                    <br />
+                    <br />
+                    <br/>
+                    <h1 id="msg">LDS MISSIONS</h1>
+                    <h1 id="msg2">In the latter days</h1>
+                    
+                   <!-- <div class="col-lg-3"></div>-->
+                    
+                    <div class="col-lg-4">
+                        <button class="button">Find Out More!</button>
+                    </div>
+                    
+                    <!--<h2>Would you like this on your site?</h2>
+                    <h3><a href="#main" class="scrolly">Read below</a></h3>-->
+                    <br />
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2></h2>
+                        <p>
+
+                        </p>
+                        <!--Goes to Rentals View-->
+
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<button onclick="myFunction()" type="button" class="btn btn-default ">Mute/UnMute Video</button>
+<script>
+    function myFunction() {
+        if (document.getElementById("video").muted == false)
+        {
+            document.getElementById("video").muted = true;
+        }
+        else
+        document.getElementById("video").muted = false
+
+    }
+</script>
+
+
+
+    <div class="container" style='z-index:0;'>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Getting started</h2>
+                <p>
+                    BlowOut Instrument Rentals is all about letting YOU experience the world of music! Feel free to browse our
+                    selection of both new and used instruments for rental:
+                </p>
+                <!--Goes to Rentals View-->
+                <p>@Html.ActionLink("Start Browsing >>", "Rentals", "Home", null, new { @class = "btn btn-default" })
+            </div>
+            <div class="col-md-4">
+                <h2>Learn More</h2>
+                <p>Curious about who we are and what we do? We've got the answers for you right here:</p><br />
+                <!--Goes to About View-->
+                <p>@Html.ActionLink("Start Learning >>", "About", "Home", null, new { @class = "btn btn-default" })
+            </div>
+            <div class="col-md-4">
+                <h2>Contact Us</h2>
+                <p>We would be happy to answer any questions you might have:</p><br />
+                <!--Goes to Contact View-->
+                <p>@Html.ActionLink("Send a Message >>", "Contact", "Home", null, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+
+
+    
