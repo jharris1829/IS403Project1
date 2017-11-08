@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Mission";
+}
+
+<h2>Mission</h2>
+
+<p>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Tell Me More!
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href='@Url.Action("MissionFAQ", "Mission", new { missionName = "Japan Sendai" })'>Japan Sendai</a></li>
+            <li><a href='@Url.Action("MissionFAQ", "Mission", new { missionName = "Mexico City West" })'>Mexico City West</a></li>
+            <li><a href='@Url.Action("MissionFAQ", "Mission", new { missionName = "Adriatic North" })'>Adriatic North</a></li>
+        </ul>
+    </div>
+</p>
