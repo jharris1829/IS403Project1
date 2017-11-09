@@ -19,6 +19,47 @@ myFooterText {
     padding-bottom: 20%;
 }
 
+.jumbotron.missionJumbo {
+    text-align: center;
+    background-image: url(images/worldMap.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-blend-mode: normal;
+}
+
+#dropdownMission {
+    padding: 15px 30px;
+    font-size: 28px;
+    border-radius: 0;
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    background-color: black;
+}
+
+.dropdown-menu > li > a {
+    padding: 10px 50px;
+    font-size: 25px;
+    color: white;
+}
+
+.dropdown {
+    opacity: 0.6;
+    font-family: 'HelveticaNeue';
+}
+
+.dropdown > ul {
+    width: 100%;
+}
+
 .jumbotron_footer {
     text-align: right;
 }
