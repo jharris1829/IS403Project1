@@ -25,6 +25,7 @@ namespace MissionSite.Controllers
 
             if (missionName == "Japan Sendai")
             {
+                missions.missionName = missionName;
                 missions.MissionPresident = "Osamu Sekiguchi";
                 missions.MissionAddress = "3-1-5 Yagiyama Minami Taihaiku-ku Sendai - Shi Miyagi - Ken Japan 982 - 0807";
                 missions.Language = "Japanese";
@@ -39,6 +40,7 @@ namespace MissionSite.Controllers
             }
             else if (missionName == "Mexico City West")
             {
+                missions.missionName = missionName;
                 missions.MissionPresident = "Carl Duane Grossen";
                 missions.MissionAddress = "Av. Fuente de las Pirámides No.1, Piso 1 Lomas de Tecamachalco 53950 Naucalpan, Estado de Mexico Mexico";
                 missions.Language = "Spanish";
@@ -53,6 +55,7 @@ namespace MissionSite.Controllers
             }
             else if (missionName == "Adriatic North")
             {
+                missions.missionName = missionName;
                 missions.MissionPresident = "David M. Melonakos";
                 missions.MissionAddress = "Svacicev Trg 3/1 10000 Zagreb, Croatia";
                 missions.Language = "Serbo-Croatian";

@@ -7,6 +7,7 @@ namespace MissionSite.Models
 {
     public class Missions
     {
+        public string missionName { get; set; }
         public string MissionPresident { get; set; }
         public string MissionAddress { get; set; }
         public string Language { get; set; }
