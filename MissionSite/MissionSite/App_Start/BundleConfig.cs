@@ -30,7 +30,8 @@ namespace MissionSite
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/customStyle.css",
-                      "~/Content/faqstyles.css"));
+                      "~/Content/faqstyles.css",
+                      "~/Content/mikeStyle.css"));
         }
     }
 }
