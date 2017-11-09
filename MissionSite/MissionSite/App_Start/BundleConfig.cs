@@ -29,7 +29,8 @@ namespace MissionSite
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/customStyle.css"));
+                      "~/Content/customStyle.css",
+                      "~/Content/faqstyles.css"));
         }
     }
 }
