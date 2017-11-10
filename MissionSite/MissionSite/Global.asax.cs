@@ -16,6 +16,7 @@ namespace MissionSite
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            MvcSiteMapProvider.DI.Composer.Compose();
         }
     }
 }
