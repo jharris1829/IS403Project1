@@ -4,7 +4,9 @@
 body {
 }
 
-myFooterText {
+
+
+    myFooterText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
 }
@@ -226,13 +228,24 @@ html, body {
     width: auto;
     padding: 0 !important;
     margin: 0 !important;
-    //background-color: gray;
     position: relative;
     transition: .2s opacity;
 }
-
+#splitDiv {
+    width: 100%;    
+}
+body{
+    //height:auto;
+}
+#homepage {
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    position:relative;
+}
 #video {
     width: 100vw;
+    min-width:1400px;
     height: auto;
     object-fit: cover;
     left: 0px;
@@ -283,6 +296,7 @@ html, body {
 /* The container for our text and stuff */
 #messageBox {
     position: absolute;
+    min-width:1300px;
     top: 0;
     left: 0;
     display: flex;
@@ -346,6 +360,13 @@ nav > a:hover {
     background-color: red;
     color: red;
 }
+
+.navbar-default {
+    background-color: transparent !important;
+    border-color: transparent;
+    background-image: none;
+    box-shadow: none;
+}
 ul.nav a:hover {
     color: #e0bc75 !important;
 }
@@ -374,8 +395,12 @@ div.nav a:hover {
     background: #b7b6cd;
     color: #fff;
 }
-
-
+#buttonDiv{
+    position:relative;
+   // z-index:-1;
+    padding-left:20px;
+    /min-width:1400px;
+}
 
 
 .button {
@@ -401,7 +426,6 @@ div.nav a:hover {
         transform: translateY(4px);
     }
 
-
 .mbutton {
     padding: 15px;
     font-size: 24px;
@@ -424,3 +448,41 @@ div.nav a:hover {
         //box-shadow: 0 5px #666;
         transform: translateY(4px);
     }
+h3.luxury {
+    font-size: 75px;
+    font-style: italic;
+    font-weight: 300;
+}
+p {
+    -webkit-font-smoothing: auto;
+    font-smoothing: auto;
+    margin: 5px 0;
+    font-size: 20px !important;
+    line-height: 25px;
+    color: #333333;
+    font-weight: 300;
+    font-family: "brandon-grotesque",sans-serif;
+    margin-bottom: 20px;
+}
+
+a.gold-button {
+    position: relative;
+    border: 5px solid #e0bc75;
+    color: #e0bc75;
+    margin-top: 20px;
+    padding: 9px 18px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "brandon-grotesque",sans-serif;
+    text-align: center;
+    float: left;
+    display: block;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    text-align:center;
+}
+#bottomStuff{
+    min-width:1400px
+}
