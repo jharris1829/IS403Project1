@@ -59,14 +59,18 @@
 
     <div class="row" id="buttonDiv">
         
-        <button onclick="myFunction()" type="button" class="btn btn-default">Mute/UnMute Video</button>
+        <button onclick="myFunction()" type="button" class="btn btn-default"><span id="muteImg" class="glyphicon glyphicon-volume-off"></span></button>
         <script>
             function myFunction() {
                 if (document.getElementById("video").muted == false) {
-                    document.getElementById("video").muted = true;
+                    document.getElementById("video").muted = true
+                    document.getElementById("muteImg").className = "glyphicon glyphicon-volume-off";
                 }
                 else
+                {
                     document.getElementById("video").muted = false
+                    document.getElementById("muteImg").className = "glyphicon glyphicon-volume-up";
+                }
             }
         </script>
        

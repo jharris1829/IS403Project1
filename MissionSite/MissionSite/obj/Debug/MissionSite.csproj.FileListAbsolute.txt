@@ -268,3 +268,9 @@ C:\Users\bryce\Documents\IS403Project1\MissionSite\MissionSite\obj\Debug\Mission
 C:\Users\bryce\Documents\IS403Project1\MissionSite\MissionSite\obj\Debug\MissionSite.csproj.CoreCompileInputs.cache
 C:\Users\bryce\Documents\IS403Project1\MissionSite\MissionSite\obj\Debug\MissionSite.dll
 C:\Users\bryce\Documents\IS403Project1\MissionSite\MissionSite\obj\Debug\MissionSite.pdb
+C:\Users\jharr\Documents\IS403Project1\MissionSite\MissionSite\bin\MvcSiteMapProvider.dll
+C:\Users\jharr\Documents\IS403Project1\MissionSite\MissionSite\bin\MvcSiteMapProvider.WebActivator.dll
+C:\Users\jharr\Documents\IS403Project1\MissionSite\MissionSite\bin\Microsoft.Web.Administration.dll
+C:\Users\jharr\Documents\IS403Project1\MissionSite\MissionSite\bin\WebActivatorEx.dll
+C:\Users\jharr\Documents\IS403Project1\MissionSite\MissionSite\bin\MvcSiteMapProvider.xml
+C:\Users\jharr\Documents\IS403Project1\MissionSite\MissionSite\bin\MvcSiteMapProvider.WebActivator.xml

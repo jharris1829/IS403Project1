@@ -29,6 +29,8 @@ namespace MissionSite
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
+                      "~/Content/footer-distributed.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/customStyle.css",
                       "~/Content/faqstyles.css",
                       "~/Content/mikeStyle.css"));

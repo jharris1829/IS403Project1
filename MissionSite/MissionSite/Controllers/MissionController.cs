@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcSiteMapProvider.Web.Mvc.Filters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,8 @@ namespace MissionSite.Controllers
         {
             return View();
         }
+
+        [SiteMapTitle("missionName")]
         public ActionResult MissionFAQ(string missionName, int questionID = 0)
         {
             Models.Missions missions = new Models.Missions();
