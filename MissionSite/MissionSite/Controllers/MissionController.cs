@@ -13,7 +13,7 @@ namespace MissionSite.Controllers
         {
             return View();
         }
-        public ActionResult MissionFAQ(string missionName)
+        public ActionResult MissionFAQ(string missionName, int questionID = 0)
         {
             Models.Missions missions = new Models.Missions();
 
@@ -22,6 +22,7 @@ namespace MissionSite.Controllers
             ViewBag.question3 = "What were your favorite areas?";
             ViewBag.question4 = "What items should you pack?";
             ViewBag.question5 = "What was your favorite experience?";
+            ViewBag.questionID = questionID;
 
             if (missionName == "Japan Sendai")
             {
@@ -31,7 +32,7 @@ namespace MissionSite.Controllers
                 missions.Language = "Japanese";
                 missions.Climate = "Humid subtropical";
                 missions.Religion = "Buddism";
-                missions.Flag = "~/Content/images/japanFlag.jpg";
+                missions.Flag = "../../Content/images/japan.jpg";
                 missions.Answer1 = "Ramen!! It is so good!";
                 missions.Answer2 = "They are very humble and polite. For the most part they all want to do good.";
                 missions.Answer3 = "I loved Misawa, Aomori, Yokote, and Akita. They presented different challenges, but there were so many great relationships made there.";
@@ -46,7 +47,7 @@ namespace MissionSite.Controllers
                 missions.Language = "Spanish";
                 missions.Climate = "Cold and rainy";
                 missions.Religion = "Catholicism";
-                missions.Flag = "~/Content/images/mexicoFlag.png";
+                missions.Flag = "../../Content/images/mexico.jpg";
                 missions.Answer1 = "Ramen!! It is so good!";
                 missions.Answer2 = "They are very humble and polite. For the most part they all want to do good.";
                 missions.Answer3 = "I loved Misawa, Aomori, Yokote, and Akita. They presented different challenges, but there were so many great relationships made there.";
@@ -61,7 +62,7 @@ namespace MissionSite.Controllers
                 missions.Language = "Serbo-Croatian";
                 missions.Climate = "cool, rainy winters and hot, dry summers";
                 missions.Religion = "Catholicism";
-                missions.Flag = "~/Content/images/croatiaFlag.png";
+                missions.Flag = "../../Content/images/serbia.jpg";
                 missions.Answer1 = "Ramen!! It is so good!";
                 missions.Answer2 = "They are very humble and polite. For the most part they all want to do good.";
                 missions.Answer3 = "I loved Misawa, Aomori, Yokote, and Akita. They presented different challenges, but there were so many great relationships made there.";
