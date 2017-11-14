@@ -3,12 +3,14 @@
     ViewBag.Title = "Mission";
 }
 
+<!--Javascript file changes background flag image when hovering on dropdown link-->
 @section scripts{
 
     @Scripts.Render("~/bundles/mission")
 
 }
 
+<!--Jumbotron with flag as background-->
 <div class="jumbotron missionJumbo" id="missionBackground">
     <div class="container">
         <div class="row">
@@ -19,6 +21,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
+                <!--Dropdown menu centered in page-->
                 <div class="dropdown btn-group">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMission" data-toggle="dropdown">
                         --SELECT MISSION--

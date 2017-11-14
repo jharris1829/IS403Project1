@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <!--Navigation bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <!--<li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>-->
                 <li class="navbar-brand"><span>@Html.MvcSiteMap().SiteMapPath()</span></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -22,6 +22,8 @@
         </div>
     </div>
         @RenderBody()
+
+    <!--Footer bar-->
     <footer class="footer-distributed">
         <div class="footer-right">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -39,10 +41,11 @@
                 ·
                 <a href="@Url.Action("About", "Home")">About</a>
             </p>
-            <p>Company Name &copy; 2017</p>
+            <p><span style="font-family: 'Informal Roman'; font-size: 18px">Dunk 'Em</span> &copy; 2017</p>
         </div>
     </footer>
 
+    <!--javascript bundles-->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

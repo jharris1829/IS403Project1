@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcSiteMapProvider.Loader;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,6 @@ namespace MissionSite
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            MvcSiteMapProvider.DI.Composer.Compose();
         }
     }
 }

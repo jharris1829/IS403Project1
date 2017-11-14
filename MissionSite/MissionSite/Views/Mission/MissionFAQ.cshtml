@@ -1,11 +1,9 @@
 ﻿@model MissionSite.Models.Missions
 @{
-    ViewBag.Title = "MissionFAQ";
-    //string initialDiv = "<div style=\"background-image:url('" + Model.Flag + "');\">";
-    //int count;
-    //count = 0;
+    ViewBag.Title = Model.missionName;
 }
 
+<!--Snapshot information of mission-->
 <div class="FAQBackground" style="background-image:url('@Model.Flag');">
     <div>
         <div class="row">
@@ -18,6 +16,7 @@
             </div>
             <div class="col-md-6 FAQInformation">
                 <h4 style="color: white">
+                    <!--The information for each category is pulled dynamically from the model-->
                     <strong>@Model.missionName Mission - Snapshot</strong>
                     <dl>
                         <dt class="col-sm-3"><strong>President: </strong></dt>
@@ -67,6 +66,7 @@
     </div>
 </div>
 
+<!--FAQs container for the frequently asked questions-->
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -98,7 +98,7 @@
             {
                 if (ViewBag.questionID == 1)
                 {
-                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">&#64anderson</a> @Model.Answer1</p>
+                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">@ViewBag.handler</a> @Model.Answer1</p>
                     <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">&#64bigjoe</a> What do you mean? I hated ramen!</p>
                     <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">&#64rm3421</a> &#64bigjoe You are a fool.</p>
                     <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">&#64admin</a> Site rules forbid personal insults. Please keep comments cordial.</p>
@@ -116,7 +116,7 @@
                 }
                 else if (ViewBag.questionID == 2)
                 {
-                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">&#64anderson</a> @Model.Answer2</p>
+                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">@ViewBag.handler</a> @Model.Answer2</p>
                     using (Html.BeginForm("MissionFAQ", "Mission", new { Model.missionName }, FormMethod.Post, new { @class = "form-group" }))
                     {
                         <div class="container">
@@ -131,7 +131,7 @@
                 }
                 else if (ViewBag.questionID == 3)
                 {
-                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">&#64anderson</a> @Model.Answer3</p>
+                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">@ViewBag.handler</a> @Model.Answer3</p>
                     using (Html.BeginForm("MissionFAQ", "Mission", new { Model.missionName }, FormMethod.Post, new { @class = "form-group" }))
                     {
                         <div class="container">
@@ -146,7 +146,7 @@
                 }
                 else if (ViewBag.questionID == 4)
                 {
-                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">&#64anderson</a> @Model.Answer4</p>
+                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">@ViewBag.handler</a> @Model.Answer4</p>
                     using (Html.BeginForm("MissionFAQ", "Mission", new { Model.missionName }, FormMethod.Post, new { @class = "form-group" }))
                     {
                         <div class="container">
@@ -161,7 +161,7 @@
                 }
                 else
                 {
-                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">&#64anderson</a> @Model.Answer5</p>
+                    <p><img src="../../Content/images/trackingline.jpg" class="comment" /><img src="../../Content/images/blankProfile.png" class="comment" /> <a href="#" class="handler">@ViewBag.handler</a> @Model.Answer5</p>
                     using (Html.BeginForm("MissionFAQ", "Mission", new { Model.missionName }, FormMethod.Post, new { @class = "form-group" }))
                     {
                         <div class="container">
